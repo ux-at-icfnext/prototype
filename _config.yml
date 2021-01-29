@@ -3,8 +3,11 @@ description: SAMHSA running on USWDS.
 
 # For Github
 # uncommit this on Github -- then add config to .gitignore so as not to overwrite
-# baseurl: "/github-for-writers" # the subpath of your site, e.g. /blog
-# url: "https://ux-at-icfnext.github.io/github-for-writers" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/prototype" # the subpath of your site, e.g. /blog
+url: "https://ux-at-icfnext.github.io/prototype" # the base hostname & protocol for your site, e.g. http://example.com
+
+#theme: uswds-jekyll
+remote_theme: uswds-jekyll
 
 # GitHub information
 # This is used for adding an edit this page link to the footer
@@ -12,6 +15,7 @@ github_info:
   organization: 18F
   repository: uswds-jekyll
   default_branch: master
+
 
 # Configuration for setting the site width to 100%
 # To enable, uncomment the following line
