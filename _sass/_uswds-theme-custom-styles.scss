@@ -1,0 +1,14 @@
+.usa-footer__logo-img, .usa-header .usa-logo .usa-logo-img {
+    max-width: 15rem;
+    width: 15rem;
+    height: auto;
+    @media (max-width: 63.99em){
+    max-width: 10rem;
+    width: 7rem;
+    height: auto;
+    }
+}
+
+.usa-navbar {
+    height: 3.5rem;
+}

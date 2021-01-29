@@ -1,0 +1,120 @@
+# This is the configuration for the site navigation.
+
+# This file defines the structure of various named navigational
+# listings, any of which can be used (with some caveats) as the
+# links in your header, footer, and per-page side navigation.
+#
+# For instance, if you have a "primary" navigation list here, you
+# can use that as your header's primary navigation by setting
+# `primary.links` to "primary":
+#
+# primary:
+#   links: primary
+#
+#primary:
+#  - text: Documentation
+#    href: /docs/
+#  - text: Navigation section
+#    links:
+#      - text: Demo link A
+#        href: /two/a/
+#      - text: Demo link B
+#        href: /two/b/
+#      - text: Demo link C
+#        href: /two/c/
+#      - text: Demo link D
+#        href: /two/a/
+#      - text: Demo link E
+#        href: /two/b/
+#      - text: Demo link F
+#        href: /two/c/
+#  - text: Referenced section
+#    links: footer
+#  - text: External link
+#    href: https://18f.gsa.gov
+#    external: true
+primary:
+  - text: Find Treatment
+    href: /test/
+  - text: Practitioner Training
+    links:
+      - text: Demo link A
+        href: /two/a/
+      - text: Demo link B
+        href: /two/b/
+  - text: Public Messages
+    href: /test/
+  - text: Grants
+    href: /test/
+  - text: Data
+    href: /test/
+  - text: Programs
+    href: /test/
+  - text: Newsroom
+    href: /test/
+  - text: About Us
+    href: /test/
+  - text: Publications
+    href: /test/
+
+secondary:
+  - text: Home
+    href: /
+  - text: Site Map
+    href: /sitemap/
+  - text: Contact Us
+    href: /contact-us/
+
+docs:
+  - text: Sidenav Documentation
+    href: /docs/
+  - text: Sidenav External link
+    href: https://18f.gsa.gov
+    external: true
+
+# Uncomment the 'links' sections below to use footer link columns
+# with the 'big' footer style.
+footer:
+  - text: Home
+    href: /
+  - text: Site Map
+    href: /sitemap/
+  - text: Viewers & Plugins
+    href: /
+  - text: Disclaimers
+    href: /
+
+footer-lang:
+  - text: Espanol
+    href: /
+  - text: English
+    href: / 
+  - text: 繁體中文 
+    href: /
+  - text: Tiếng Việt
+    href: / 
+  - text: 한국어 
+    href: /
+  - text: Tagalog 
+    href: /
+  - text: Русский 
+    href: /
+  - text: العربية 
+    href: /
+  - text: Kreyòl Ayisyen 
+    href: /
+  - text: Français Polski 
+    href: /
+  - text: Português 
+    href: /
+  - text: Italiano 
+    href: /
+  - text: Deutsch 
+    href: /
+  - text: 日本語 
+    href: /
+  - text: فارسی 
+    href: /
+  - text: English
+    href: /
+
