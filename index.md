@@ -17,8 +17,36 @@ hero:
     href: /link/
   content: USWDS doesn't have a slider -- that will be custom. This is just to demostrate out of the box functionality.
 
+card:
+  - heading: "Find Treatment"
+    body: "Millions of Americans have a substance use disorder."
+    button: "Find a facility near you"
+    image: "https://via.placeholder.com/80x60?text=image"
+    image-alt: "My Image"
+  - heading: "National Suicide Prevention Lifeline "
+    body: "Free and confidential support for people in distress, 24/7."
+    button: "1-800-273-TALK (8255)"
+    image: "https://via.placeholder.com/80x60?text=image"
+    image-alt: "My Image"
+    card-type: "usa-card--flag"
+
+
 ---
-{% include snippets/gethelp-card.html %}
-{% include snippets/topics-card.html %}
-{% include snippets/publicmessages-card.html %}
-{% include snippets/glance-card.html %}
+
+
+
+{% include snippets/gethelp.html %}
+{% include snippets/topics.html %}
+<div class="grid-container">
+    <div class="grid-row">
+        <div class="tablet:grid-col-6">{% include snippets/publicmessages.html %}</div>
+        <div class="tablet:grid-col-6">{% include snippets/practitioner-training.html %}</div>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="grid-row">
+        <div class="tablet:grid-col-6">{% include snippets/glance.html %}</div>
+        <div class="tablet:grid-col-6">{% include snippets/offices.html %}</div>
+    </div>
+</div>
+

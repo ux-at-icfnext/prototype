@@ -1,0 +1,30 @@
+  <li class="{{ include.data.grid-class | default:'tablet:grid-col-4' }} usa-card {{ include.data.card-type }}">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">{{ include.data.heading}}</h2>
+      </header>
+      <div class="usa-card__media">
+        <div class="usa-card__img">
+          <img src="{{ include.data.image }}" alt=" {{ include.data.image-alt }}">
+        </div>
+      </div>
+      <div class="usa-card__body">
+        <p>{{ include.data.body }}</p>
+      </div>
+      <div class="usa-card__footer">
+        <button class="usa-button">{{ include.data.button }}</button>
+      </div>
+    </div>
+  </li>
+
+<!-- USAGE EXAMPLE 
+ <div class="home-get-help">
+    <h2>Get Help</h2>
+    <ul class="usa-card-group">
+    {% for help in page.card %}
+        {% include patterns/card.html data=help %}
+    {% endfor %}
+    </ul>
+</div>
+-->
+ 
