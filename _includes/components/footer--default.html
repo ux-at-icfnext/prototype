@@ -12,6 +12,8 @@
       <a href="{{ footer.top.href | default: '#' }}">{{ footer.top.text | default: 'Return to top' }}</a>
     </div>
   {% endif %}
+  
+<!-- Begin Primary Footer Menu -->
 
   {% if footer.links %}
   {% assign footer_links = site.data.navigation[footer.links] | default: footer.links %}
@@ -19,46 +21,50 @@
   {% assign _size = footer_links.size | minus: 1 %}
   {% assign _size = _sizes[_size] | default: 'whole' %}
 <div class="usa-footer__primary-section">
-  <div class="grid-row grid-gap">
-    <div class="usa-sign-up">
-      <h3 class="usa-sign-up__heading">Sign Up for SAMHSA Email Updates</h3>
-      <form class="usa-form">
-        <label class="usa-label" for="email">Your email address</label>
-        <input class="usa-input" id="email" name="email" type="email">
-        <button class="usa-button" type="submit">Sign up</button>
-      </form>
+  <div class="grid-container ">
+    <div class="grid-row grid-gap">
+      <div class="usa-sign-up">
+        <h3 class="usa-sign-up__heading">Sign Up for SAMHSA Email Updates</h3>
+        <form class="usa-form">
+          <label class="usa-label" for="email">Your email address</label>
+          <input class="usa-input" id="email" name="email" type="email">
+          <button class="usa-button" type="submit">Sign up</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <nav class="usa-footer__nav" aria-label="Footer navigation">
-    <ul class="grid-row grid-gap">
-      {% for _link in footer_links %}
-      <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-        <a class="usa-footer__primary-link" href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
-          {{ _link.text }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </nav>
-{% endif %}
-  <h3>Language Assistance Available</h3>
-  {% if footer-lang.links %}
-  {% assign lang_links = site.data.navigation[footer-lang.links] | default: footer-lang.links %}
-  {% assign _sizes = 'whole half third fourth sixth' | split: ' ' %}
-  {% assign _size = lang_links.size | minus: 1 %}
-  {% assign _size = _sizes[_size] | default: 'whole' %}
-      <nav class="usa-footer__nav" aria-label="Language Use navigation">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
       <ul class="grid-row grid-gap">
-          {% for _link in lang_links %}
-          <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+        {% for _link in footer_links %}
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
           <a class="usa-footer__primary-link" href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
-              {{ _link.text }}
+            {{ _link.text }}
           </a>
-          </li>
-          {% endfor %}
+        </li>
+        {% endfor %}
       </ul>
-      </nav>
+    </nav>
   {% endif %}
+
+<!-- Begin Language Menu -->
+  {% if footer.lang-links %}
+    {% assign footer_links = site.data.navigation[footer.lang-links] | default: footer.lang-links %}
+    {% assign _sizes = 'whole half third fourth sixth' | split: ' ' %}
+    {% assign _size = footer_links.size | minus: 1 %}
+    {% assign _size = _sizes[_size] | default: 'whole' %}
+    <h3>Language Assistance Available</h3>
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <ul class="grid-row grid-gap">
+        {% for _link in footer_links %}
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
+            {{ _link.text }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+  </div>
 </div>
 
 

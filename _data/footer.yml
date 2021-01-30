@@ -26,6 +26,9 @@ last_updated: false
 # this is a key into _data/navigation.yml
 links: footer
 
+# this is a key into _data/navigation.yml
+lang-links: footer-lang
+
 # Configuration for the big footer's email sign-up form.
 # Set to true to make the form visible.
 # Hooking it up to send the data somewhere is up to you :)
