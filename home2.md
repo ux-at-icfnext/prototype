@@ -1,6 +1,6 @@
 ---
 title: Home
-permalink: /
+permalink: /home2
 
 layout: home
 
@@ -34,7 +34,6 @@ card:
 ---
 
 {% include snippets/gethelp.html %}
-{% include snippets/topics.html %}
 <div class="grid-container">
     <div class="grid-row">
         <div class="tablet:grid-col-6">{% include snippets/publicmessages.html %}</div>

@@ -12,3 +12,23 @@
 .usa-navbar {
     height: 3.5rem;
 }
+
+.home-glance {
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.home-offices {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.home-glance li, .home-offices li {
+    list-style: none;
+    border-top: 1px solid ;
+}
+.home-glance ul, .home-offices ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
