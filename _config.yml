@@ -3,8 +3,8 @@ description: SAMHSA running on USWDS.
 
 # For Github
 # uncommit this on Github -- then add config to .gitignore so as not to overwrite
-baseurl: "/prototype" # the subpath of your site, e.g. /blog
-url: "https://ux-at-icfnext.github.io/prototype" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/prototype" # the subpath of your site, e.g. /blog
+#url: "https://ux-at-icfnext.github.io/prototype" # the base hostname & protocol for your site, e.g. http://example.com
 
 #theme: uswds-jekyll
 remote_theme: uswds-jekyll
