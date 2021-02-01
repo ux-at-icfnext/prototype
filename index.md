@@ -33,8 +33,6 @@ card:
 
 ---
 
-
-
 {% include snippets/gethelp.html %}
 {% include snippets/topics.html %}
 <div class="grid-container">

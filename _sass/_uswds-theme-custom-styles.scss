@@ -13,14 +13,20 @@
     height: 3.5rem;
 }
 
-.home-glance .usa-collection li {
-    list-style: none;
+.home-glance {
+    margin-right: 10px;
 }
-.home-glance .usa-collection ul {
+
+.home-offices {
+    margin-left: 10px;
+}
+
+.home-glance li, .home-offices li {
+    list-style: none;
+    border-top: 1px solid ;
+}
+.home-glance ul, .home-offices ul {
     margin-left: 0;
     padding-left: 0;
 }
 
-.home-glance .usa-collection .usa-collection__item{
-    border-top: 1px solid ;
-}
