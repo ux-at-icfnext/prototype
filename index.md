@@ -41,10 +41,5 @@ card:
         <div class="tablet:grid-col-6">{% include snippets/practitioner-training.html %}</div>
     </div>
 </div>
-<div class="grid-container">
-    <div class="grid-row">
-        <div class="tablet:grid-col-6">{% include snippets/glance.html %}</div>
-        <div class="tablet:grid-col-6">{% include snippets/offices.html %}</div>
-    </div>
-</div>
+
 
